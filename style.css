@@ -145,7 +145,7 @@ input {
   margin-right: 5px;
   color: black;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .header-logo {
@@ -197,17 +197,17 @@ textarea {
 .comment-header {
   color: #828282;
   margin: 0;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 .comment-text {
   margin: 0.4em 0;
-  font-size: 0.9rem;
+  font-size: 1.25rem;
 }
 
 .comment-reply {
   text-decoration: underline !important;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 .nested-comments-0 {
