@@ -11,15 +11,12 @@ export default function Story(story){
             <div class="gray">
                 ${story.points} points by ${story.user} ${story.time_ago}
                 |
-                <a href="#/item?id=${story.id}">
+                <a href="#/item?id=${story.id}"> 
                 ${story.comments_count} comments
                 </a>
                 |
-                <span class="favorite">
-                    <span class="heart material-symbols-outlined">
-                        favorite
-                    </span>
-                    Add To Favorites
+                <span class="favorite" data-story='${JSON.stringify(story)}'>
+                    ${story.isFavorite ? `<span class="heart material-symbols-outlined">heart_minus</span> Remove From` : `<span class="heart material-symbols-outlined">favorite</span> Add To`} Favorites
                 </span>
             </div>
         </div>
