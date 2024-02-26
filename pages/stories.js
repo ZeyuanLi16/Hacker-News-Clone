@@ -6,7 +6,7 @@ import checkFav from '../utils/checkFav.js';
 
 export default async function Stories(path) {
     const {favorites } = store.getState();
-    const stories = await getStories(path);
+    const stories = await getStories(path, favorites);
     const hasStories = stories.length > 0;
                     
     view.innerHTML = `<div>
@@ -27,7 +27,11 @@ export default async function Stories(path) {
         }); 
     });}
 
-async function getStories(path) {
+async function getStories(path, favorites) {
+    if(path === '/favorites'){
+        return favorites;
+    }
+
     const isHomeRoute = path === '/';
     const isNewRoute = path === '/new';
     if (isHomeRoute) {
