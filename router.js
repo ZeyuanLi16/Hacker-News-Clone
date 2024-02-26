@@ -1,6 +1,6 @@
 import Stories from './pages/stories.js';
 import Item from './pages/item.js';
-import view from "../utils/view.js"
+import view from "./utils/view.js"
 
 const router = new Navigo(null, true, '#');
 /*
