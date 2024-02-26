@@ -1,13 +1,16 @@
+// Reducer function for state management
+
 function createStore(reducer){
-    let currentState = reducer(undefined, {});  // initial state
+    let currentState = reducer(undefined, {});  // Initial state
    
     return {
-        getState: () => currentState,  // to gett state
-        dispatch: action => {          // to run action on the state, pass action to dispatch
+        getState: () => currentState,  // Gett state
+        dispatch: action => {          // Call dispatch to run action on the state, pass action to dispatch
             currentState = reducer(currentState, action);    
         } 
     }
 }
+
 const initialState = {
     favorites: []  
 }
@@ -29,7 +32,7 @@ function favoritesReducer(state = initialState, action) {
     } 
 }
 
-const action = { type: "ADD_FAVORITE", payload: { favorite: { title: "story1", id: 1 } } }
+// Action example: { type: "ADD_FAVORITE", payload: { favorite: { title: "story1", id: 1 } } }
 
 const store = createStore(favoritesReducer); // pass in the reducer
 export default store;
