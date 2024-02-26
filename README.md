@@ -1,4 +1,4 @@
-# Project Name
+# Hacker News Clone
 
 A Vanilla JavaScript project cloning [Hacker News](https://news.ycombinator.com/news).
 
@@ -21,11 +21,12 @@ A Vanilla JavaScript project cloning [Hacker News](https://news.ycombinator.com/
   - `view.innerHTML = 'No Story'`
 
 More bacis concepts like:
-* **Template Literals**
-* **Shorten Conditionals**: Ternaries operator(` ? : `) and short circuiting(`|| &&`).
-* **Object De-structuring**: `Story({...story, index : index + 1, isFavorite: checkFav(favorites, story)}))`.
-* **Modules**: Leveraged ES6 modules to structure the codebase into reusable pieces.
 * **HTML data attribute**: `data-*` attribute translate to `this.dataset.*`.
+* **Modules**: Leveraged ES6 modules to structure the codebase into reusable pieces.
+* **Object De-structuring**: Like `Story({...story, index : index + 1, isFavorite: checkFav(favorites, story)}))`.
+* **Shorten Conditionals**: Ternaries operator(` ? : `) and short circuiting(`|| &&`).
+* **Template Literals**
+* **Array Mapping**: Index parameter.
 
 
 ## File Structure
