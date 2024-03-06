@@ -25,8 +25,8 @@ More bacis concepts like:
 * **Modules**: Leveraged ES6 modules to structure the codebase into reusable pieces.
 * **Object De-structuring**: Like `Story({...story, index : index + 1, isFavorite: checkFav(favorites, story)}))`.
 * **Shorten Conditionals**: Ternaries operator(` ? : `) and short circuiting(`|| &&`).
-* **Template Literals**
-* **Array Mapping**: Index parameter.
+* **Template Literals**: ` `` ` allowing for multi-line strings, string interpolation with embedded expressions.
+* **Array Mapping**: `map()` with an index parameter.
 
 
 ## File Structure
@@ -48,6 +48,6 @@ To run this project locally, you'll need to serve the files through an HTTP serv
 If opened in VSCode, there is a Live Server([link](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)) extention available.
  
 
-## Usage
+## Preview
 
 ![screenshot](screenshot.png)
